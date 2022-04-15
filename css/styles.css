@@ -1,0 +1,163 @@
+body{ 
+    font-family: 'Montserrat', sans-serif;
+}
+
+#title{
+    background-color: #ff4c68;
+}
+
+nav{
+    margin-bottom: 70px ;
+}
+
+h1{
+    font-size: 3.3rem;
+    line-height: 1.5;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.Download{
+    margin-right: 12px;
+    margin-bottom: 12px; 
+    /* this is to avoid touching of both download buttons when mobile or tablet viewport */
+}
+
+.container-fluid{
+    padding: 4% 17%;
+}
+
+.navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    margin: 0 10px;
+}
+
+.image{
+    transform: rotate(22deg);
+    margin: 20px 0 25px 140px;
+    width: 57%;
+}
+
+#features{
+    background-color: white;
+    padding: 4% 16%;
+    text-align: center;
+}
+
+.one{
+    text-align: center;
+    padding: 6%;
+}
+
+p{
+    color: #8f8f8f;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.icon{
+    color: #ef8172;
+}
+
+.icon:hover{
+    color: #ff4c68;
+}
+
+
+#testimonials{
+    background-color: #ff4c68;
+    text-align: center;
+    color: white;
+}
+
+h2{
+    font-size: 3rem;
+    line-height: 1.7;
+}
+
+.dog, .testimonial-image{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.carousel-item{
+    padding: 7% 19%;
+}
+
+#press{
+    background-color: #ff4c68;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.logo{
+    width: 14%;
+    margin: 60px 38px 20px;
+}
+
+#pricing{
+    padding: 120px;
+    text-align: center;
+}
+
+.card{
+    margin: 55px 15px;
+   
+}
+
+#cta{
+    background-color: #ff4c68;
+    padding: 7% 19%;  
+    text-align: center;
+}
+
+.line{
+    font-size: 3.3rem;
+    line-height: 1.5;
+    color: white;
+    padding-bottom: 2%;
+}
+
+.Download2{
+   margin: 12px;
+} 
+
+#footer{
+    text-align: center;
+    padding: 8% 15% 3.5%;
+}
+
+.icon2{
+    color: #ef8172;
+    margin: 20px 10px;
+}
+
+.icon2:hover{
+    color: #ff4c68;
+}
+
+@media (max-width: 990px) {
+/* .row{
+    text-align: center;
+} */
+.Download{
+    margin-bottom: 12px;  /* this is to avoid touching of both download buttons when mobile or tablet viewport */
+}
+.image{
+    transform: rotate(0);
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#title{
+    text-align: center;
+}
+}
+
+

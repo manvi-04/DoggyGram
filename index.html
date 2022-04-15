@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>DoggyGram</title>
+  
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- Personalised CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/5c57fc6146.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+</head>
+
+<body>
+
+  <section id="title">
+
+    <div class="container-fluid">
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="">DoggyGram</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">Contact</a> 
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pricing">Pricing</a> 
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#cta">Download</a> 
+        </li>
+      </ul>
+      </div>
+    </nav>
+
+    <!-- Title -->
+
+  <div class="row">
+
+    <div class= "col-lg-6 col-sm-12">  <!-- you dont need to specify col-md-12 and col-sm-12 as they are default -->
+      <h1>Meet new and interesting dogs nearby.</h1>
+      <button type="button" class="btn btn-dark btn-lg Download"><i class="fa-brands fa-apple"></i> Download</button>
+      <!-- i added the "download" word in the class so i can reference it later while styling -->
+      <button type="button" class="btn btn-outline-light btn-lg Download"><i class="fa-brands fa-google-play"></i> Download</button>
+    </div>
+
+    <div class="col-lg-6 col-sm-12">
+      <img class="image" src="images/iphone6.png" alt="iphone-mockup" width="60%">
+    </div>
+
+  </div>
+
+</div>
+
+</section>
+ 
+  <!-- Features -->
+
+  <section id="features">
+
+  <div class="row">
+
+    <div class="one col-lg-4">
+    <i class="icon fa-solid fa-circle-check fa-4x"></i>  <br> <br>
+    <!-- we can customize the size of the icon by simply writing fa-2,3,4,.. x in the class -->
+    <h3>Easy to use.</h3>
+    <p>So easy to use, even your dog could do it.</p>
+    </div>
+  
+   <div class="one col-lg-4">
+    <i class="icon fa-solid fa-bullseye fa-4x"></i> <br> <br>
+    <h3>Elite Clientele</h3>
+    <p>We have all the dogs, the greatest dogs.</p> 
+   </div>
+
+   <div class="one col-lg-4">
+    <i class="icon fa-solid fa-heart fa-4x"></i> <br> <br>
+    <h3>Guaranteed to work.</h3>
+    <p>Find the love of your dog's life or your money back.</p>
+   </div>
+ </div>
+
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+
+    <div id="myFirstCarousal" class="carousel slide" data-bs-ride="carousel" data-interval="6000"> 
+      <!-- we can set the data-bs-ride="false" if we dont wanr carousel to slide automatically. we can also add alot of other options sucha as slide time interval before it moves to next slide (6000 implies milliseonds i.e. 6 seconds and by default interval is set to 5000 millisecons unless you specify) or to stop slideshow on hover, etc  -->
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on DoggyGram. Woof!</h2>
+         <img class="dog" src="images/dog-img.jpg" alt="dog-profile">
+         <em>Pebbles, New York</em>
+        </div>
+        <div class="carousel-item">
+          <h2>My dog used to be so lonely, but with DoggyGram's help, they've found the love of their life. I think.</h2>
+          <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+         <em>Beverly, Illinois</em>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#myFirstCarousal"   data-bs-slide="prev">
+        <!--  lines given below are optional for visually impaired people who if happen to be using screen reader,will skip over the bitton span (using aria-hidden="true") and will only hear "previous" and "next" as specified in next line -->
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#myFirstCarousal"  data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press">
+    <img class="logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="logo" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+
+    <h2>A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for your and your dog.</p>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+
+       <div class="card">
+        <div class="card-header">
+          <h3>Chihuahua</h3>
+        </div>
+        <div class="card-body">
+          <h2>Free</h2>
+          <p>5 Matches Per Day</p>
+          <p>10 Messages Per Day</p>
+          <p>Unlimited App Usage</p>
+          <button type="button" class="btn btn-outline-dark col-12 btn-lg">Sign Up</button>
+          <!-- in bootstrap 5 we cas use grid system i.e. col-12 or w-100 (width 100) to make the botton take up the entire space of box/card -->
+        </div>
+        <!-- <div class="footer"> </div>     *we dont need footer in these so skip-->
+       </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12">
+       
+        <div class="card">
+         <div class="card-header">
+           <h3>Labrador</h3>
+         </div>
+         <div class="card-body">
+           <h2>$49 / mo</h2>
+           <p>Unlimited Matches</p>
+           <p>Unlimited Messages</p>
+           <p>Unlimited App Usage</p>
+           <button type="button" class="btn btn-dark w-100 btn-lg">Sign Up</button>
+         </div>
+       </div>
+      
+      </div>
+
+      <div class="col-lg-4 col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h3>Mastiff</h3>
+          </div>
+         <div class="card-body">
+           <h2>$99 / mo</h2>
+           <p>Priority Listing</p>
+           <p>Unlimited Matches</p>
+           <p>Unlimited Messages</p>
+           <p>Unlimited App Usage</p>
+           <button type="button" class="btn btn-dark col-12 btn-lg">Sign Up</button>
+         </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3 class="line">Find the True Love of Your Dog's Life Today.</h3>
+    <button type="button" class="btn btn-dark btn-lg Download2"><i class="fa-brands fa-apple"></i> Download</button>
+
+      <button type="button" class="btn btn-outline-light btn-lg Download2"><i class="fa-brands fa-google-play"></i> Download</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <i class="icon2 fa-brands fa-twitter fa-2x"></i>
+    <i class="icon2 fa-brands fa-facebook fa-2x"></i>
+    <i class="icon2 fa-brands fa-instagram fa-2x"></i>
+    <i class="icon2 fa-solid fa-envelope fa-2x"></i>
+    <p>© Copyright DoggyGram</p>
+
+  </footer>
+
+
+</body>
+
+</html>
